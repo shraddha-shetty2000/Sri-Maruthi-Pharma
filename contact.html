@@ -1,0 +1,133 @@
+<?php
+  include "connect.php";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/7450de4497.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles1.css">
+    
+    <title>Sri Maruthi Pharma</title>
+    
+</head>
+<body>
+   
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-9c3bedd9-f96f-4b9a-a45e-2e606d2d86eb"></div>
+   
+      <nav class="nav main-nav myheader sticky" id="myheader1">
+       
+        <ul>
+        <li style="float:left;"> <img src="tielogo.jpg" alt="Not Connected" width="45px" ></li>
+          <li><a href="user.php">USERS <i class="material-icons">person</i></a></li>
+          <li><a href="index.html">BACK <i class="fa fa-arrow-right"></i></a></li>
+            
+			      
+        </ul>
+    </nav>
+        
+   
+   
+ 
+    <section class="contact  ">
+      <div class="content1">
+         <h2 style="padding-top:5px">CONTACT US</h2>
+             <p>We would love to hear it from you on your query</p>
+             </div><br>
+             <div class="container1">
+               <div class="contactinfo">
+                 <div class="box">
+                   <div class="icon1"><i class="fas fa-map-marker-alt"></i>
+                  </div>
+                     <div class="text">
+                       <h3>Address:</h3>
+                       <p>Chamarajpet,<br>Bangalore,<br>Karnataka,<br>560018</p>
+                     </div>
+                   </div>
+                   <div class="box">
+                     <div class="icon1"><i class="fa fa-phone" aria-hidden="true"></i>
+                     </div>
+                    <div class="text">
+                      <h3>Phone:</h3>
+                      <p>+91-7846958131</p>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="icon1"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                   <div class="text">
+                     <h3>Email:</h3>
+                     <p>Srimaruthipharma@gmail.com</p>
+                   </div>
+                 </div>
+                  
+                 </div>
+                 <div class="contactform">
+                     <form method="post" action="">
+                   <h2>SEND MESSAGE</h2>
+                   <div class="inputbox">
+                   <input type="text" name="FullName" id="FullName" required="required">
+                   <span>Full Name</span>
+                 </div>
+                 <div class="inputbox">
+                  <input type="text" name="PhoneNumber" id="PhoneNumber" required="required">
+                  <span>Phone Number</span>
+                </div>
+                <div class="inputbox">
+                  <input type="text" name="Email" id="Email" required="required">
+                  <span>Email</span>
+                </div>
+                <div class="inputbox">
+                  <textarea name="Message" required="required" id="Message" ></textarea>
+                  <span>Type your Message...</span>
+                </div>
+                <div class="inputbox">
+                  <input type="submit"  name="submit"  value="Send">
+                </div>
+                 </form>
+                </div>
+               </div>   
+
+               
+  
+      </section>
+     <?php
+     if(isset($_POST['submit']))
+     {
+       mysqli_query($db,"INSERT INTO `contactus` values('','$_POST[FullName]','$_POST[PhoneNumber]',
+       '$_POST[Email]','$_POST[Message]');");
+       ?>
+    <script type="text/javascript">
+    alert("Thank You for Contacting");
+    </script>
+    <?php
+      }
+     
+     ?>
+
+      <footer>
+        <div class="footer-content">
+            <h3>Sri Maruthi Pharma</h3>
+            <img src="tielogo.jpg" alt="Not Connected" width="100px" >
+            <p>20, Bull Temple road, Kamalnagar, Anandapuram,Chamarajpet, Bengaluru-5600018.</p>
+            <ul class="socials">
+               <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+               <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+    
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy; 2021 Sri Maruthi Pharma. designed by <span>Code Smashers</span></p>
+    
+        </div>
+     
+    </footer>
+    </body>
+    </html>

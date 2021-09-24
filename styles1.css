@@ -1,0 +1,715 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+}
+html,  body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav ul{
+    margin: 0;
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    display: inline-block;
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.5em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.nav a:hover{
+    color: #ffffff4d;
+    border-radius: 15px;
+}
+.main-nav{
+    text-align:right;
+    font-size: 1.1em;
+    font-weight: bolder;
+
+}
+.main-nav1{
+    text-align:center;
+    font-size: 1.1em;
+    font-weight: bolder;
+
+}
+.nav li{
+    padding: 0.5%;
+}
+.new-header{
+     
+    font-family: 'monospace';
+    text-align: center;
+    padding-top: 0.75em;
+    font-size: 5.8em;
+    color: rgb(69, 141, 236);
+}
+.about-header{
+    font-family: 'monospace';
+    text-align: center;
+    padding-top: 0.75em;
+    font-size: 5.8em;
+    color: rgb(69, 141, 236);
+}
+.s-header{
+       
+    font-family: 'monospace';
+    text-align: center;
+    padding-top: 1.3em;
+    font-size: 4.5em;
+    color: rgb(69, 141, 236);
+}
+.myheader {
+    padding: 10px 16px;
+    background: #000000;
+    opacity: .6;
+    color: #f1f1f1;
+    font-family: 'Courier New', Courier, monospace;
+    height: fit-content;
+  }
+
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%
+  }
+  
+  .sticky  {
+    padding-top: 10px;
+  }
+  
+.new-header1{
+    font-size: 2em;
+
+}
+
+
+header{
+    position: center;
+    width: 100%;
+    min-height: 33vh;
+    background:rgb(0, 0, 0);
+}
+.content2 h1{ 
+    margin: auto;
+    
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("https://www.vandolph.co.za/vandolphsa/wp-content/uploads/2018/09/contact-us-background-2.jpg");
+    background-size: cover;
+}
+.content1{
+    margin-bottom: auto;
+    padding-top: 20px;
+}
+.contact .content1{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content1 h2{
+    font-size: 36px;
+    font-weight: 500;
+    color:white;
+}
+.contact .content1 p{
+    font-weight: 300;
+    color: white;
+}
+.container1{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: auto;
+}
+.container1 .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container1 .contactinfo .box{
+    position: relative;
+    padding:20px 0;
+    display: flex;
+}
+.container1 .contactinfo .box .icon1
+{
+    min-width: 60px;
+    height: 60px;
+    background:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container1 .contactinfo .box .text p{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container1 .contactinfo .box .text h3
+{
+    font-weight: 500;
+    color: #00bcd4;
+    padding-left: 10px;
+}
+.contactform{
+    width: 35%;
+    margin-top: 20px;
+    padding:40px;
+    background:#fff;
+    opacity: .9;
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea  {
+    width: 100%;
+    padding:5px 0;
+    font-size: 16px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left:0;
+    padding:5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span{
+    color: #00bcd4;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inputbox input[type="submit"]{
+    width: 100%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding:10px;
+    font-size: 18px;
+    background:#00bcd4;
+}
+ 
+@media(max-width:991px)
+{
+    .contact{
+     padding:50px;
+    }
+    .container1{
+        flex-direction: column;
+    }
+    .container1 .contactinfo,.contactform{
+        width: 100%;
+    }
+}
+
+.sec{
+    background: #ffffff;
+    background-size:cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    height: 50vh;
+}
+footer{
+    background: #111;
+    height: auto;
+    width: auto;
+    font-family: "open sans";
+    padding-top: 10px;
+    color: #fff;
+
+}
+
+.footer-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size:1.8rem ;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+  
+    font-size: 14px;
+
+}
+.socials
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:1rem 0 1rem 0;
+}
+.socials li{
+    margin: 0 10px;
+
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.socials a i{
+    font-size:1.1rem ;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: #03a9f4;
+
+}
+.footer-bottom
+{
+    background:#000 ;
+    width: auto;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.sec1{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("https://p4.wallpaperbetter.com/wallpaper/253/638/452/light-background-hd-wallpaper-preview.jpg");
+    background-size: cover;
+}
+.about
+{
+    min-height: 85vh;
+    width:80%;
+    background: rgba(0,0,0,.6);
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 50px;
+    
+}
+.about h1{
+    color: rgb(69, 141, 236);
+    margin-top: 40px;
+    text-align: center;
+    font-size: 3em;
+}
+.about p
+{
+    color: white;
+    font-size: large;
+padding: 80px;
+padding-top:0%;
+padding-bottom:0%;
+    font-weight: 400;
+    text-align: justify;
+    
+}
+#readbtn{
+    background: no-repeat;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    width: 50%;
+    padding: 7px 15px;
+    font-size: large;
+    cursor: pointer;
+    position: absolute;
+   bottom: 20px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    
+}
+#readbtn:hover{
+    background: white;
+    color: black;
+}
+#more
+{
+    display: none;
+    
+}
+.card
+{    
+    flex-wrap: wrap;
+    position: relative;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-5%);
+    width: 450px;
+    height: 400px;
+    background:#262626;
+    overflow: hidden;
+   
+}
+.card .imgbx{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    transition: .5s;
+}
+ .card .homedtl{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.card .imgbx{
+  top: 0;
+  left: 0;
+  display: inline-block;
+}
+.card:hover .imgbx{
+    top: 0;
+  left: -100%;
+}
+.card .imgbx img
+{
+    
+width: 100%;
+height: 100%;
+}
+.card .homedtl{
+    background: #262626;
+    top: 0;
+    left: 100%;
+    padding: 60px 30px;
+}
+.card:hover .homedtl{
+    top: 0;
+    left: 0;
+}
+.card .homedtl h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px;
+    border-bottom: 2px solid #fff;
+}
+.card .homedtl p{
+    margin: 20px 0 0;
+    color: #fff;
+}
+.sec-h{
+    padding: 120 0 0;
+    box-sizing: border-box;
+     background: white;
+    padding-top:.1em;
+    min-height: 100vh;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/253/638/452/light-background-hd-wallpaper-preview.jpg");
+}
+
+.box-h{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: white;
+    transition: .5s;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+.box-h .imgbox-h{
+    position: relative;
+}
+.box-h .imgbox-h img{
+    transition: .5s;
+    width: 300px;
+    height: 500px;
+}
+.box-h:hover .imgbox-h img{
+    opacity: .5;
+    transform: translateY(-40px);
+}
+.box-h .content_h {
+position: absolute;
+bottom: -40px;
+left: 0;
+padding: 20px;
+box-sizing: border-box;
+transition: .5s;
+opacity: 0;
+}
+.box-h:hover .content_h{
+    opacity: 1;
+    bottom: 0px;
+}
+.box-h:hover{
+    transform: translateY(30px);
+}
+.box-h .content_h h3{
+    font-size: 20px;
+    color: white;
+    
+    font-weight: -700;
+}
+.box-h .content_h .btnD{
+    border: none;
+    background: rgb(148, 31, 31);
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: .5s;
+}
+.content_h a{
+    text-decoration: none;
+}
+.col-sm-4{
+    margin-top: 20px;
+    margin-left: 20px;
+    align-content: center;
+}
+.box-h .content_h .btnD:hover{
+    background: rgb(60, 136, 199);
+
+}
+.row-h{
+   margin-left: 17%;
+    display: flex;
+    margin-left: 9%;
+    align-content: center;
+    padding-bottom: 50px;
+    
+}
+.cointainer-fluid{
+    margin-top: 10px;
+    align-content: center;
+    flex-direction: column;
+    display: flex;
+    background-color: #000;
+    opacity: .7;
+    width:1100px;
+    margin-left: 14%;
+    padding-right: 375px;
+  
+}
+
+.sec-ha{
+    padding: 50px 0px 0px;
+  
+    box-sizing: border-box;
+     background: white;
+    padding-top:3em;
+    min-height: 100vh;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/253/638/452/light-background-hd-wallpaper-preview.jpg");
+    
+}
+.srch{
+   padding-top: 20px;
+   padding-bottom: 10px;
+  padding-left: 40%;
+}
+.users{
+   padding-top: 1px;
+
+ padding-left: 27%;
+   font-size: 20px;
+   color: #000000;
+   border-width: 2px;
+   border-color: #666666;
+   border-collapse: collapse;
+   text-align: left;
+}
+.users th{
+    border-width: 2px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #03d81f;
+}
+.users td{
+    border-width: 2px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+}
+
+
+.form-control{
+   
+ font-size: 22px;
+ box-sizing: border-box;
+border-radius: 20px;
+text-align: center;
+
+ 
+}
+.sectionuser{
+ background: #262626;
+
+}
+.btn{
+    border: 1px solid white ;
+ padding:2px 3px;
+  background: none;
+  font-size: 20px;
+  color: black;
+  font-family: sans-serif;
+cursor: pointer;
+margin: 3px;
+background-color: white;
+border-radius: 10px;
+}
+.btn1{
+    border: 1px solid white ;
+ padding:2px 5.9px;
+  background: none;
+  font-size: 20px;
+  color: black;
+font-family: sans-serif;
+cursor: pointer;
+margin: 3px;
+background-color: white;
+border-radius: 10px;
+}
+.btn:hover, .btn1:hover{
+    background:#03d81f ;
+    color:white ;
+}
+.sec-h h1{
+    font-size: 2em;
+}
+.sec-h p
+{
+    color: rgb(148, 143, 143);
+    font-size: large;
+    padding: 80px;
+    padding-top:0%;
+    padding-bottom:0%;
+    font-weight: 400;
+    text-align: justify;
+    
+}
+.h-div{
+    margin-top: 20px;
+    margin-left: 14%;
+    padding-top:10px;
+    background-color: #000;
+    height:300px;
+    width:1100px;
+    opacity: 0.7;
+}
+   div.containeer{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   background-color: rgb(236, 236, 236);
+   padding: 30px;
+   box-shadow: 0 50px 50px -50px rgb(248, 248, 248);
+   border-radius: 10px;
+   }
+   div.containeer div.myform1{
+       width:270px;
+       margin-right: 30px;
+   }
+   div.containeer div.myform1 h2{
+       color: black;
+   margin-bottom:20px ;
+   padding-left: 50px;
+   }
+   div.containeer div.myform1 input{
+       border: none;
+       outline: none;
+       border-radius: 8px;
+       width: 100%;
+       border-bottom: 2px solid #1c1c1e;
+       margin-bottom: 25px;
+       padding: 10px 30px;
+       font-size: 20px;
+   }
+   div.containeer div.myform1 button{
+       color: white;
+       background-color: #1c1c1e;
+       border:none;
+       outline: none;
+       border-radius: 25px;
+       font-size: 20px;
+       padding: 5px 103px;
+       font-weight: 500;
+   }
+   div.containeer div.myform1 button:hover{
+       color: black;
+       background: rgb(156, 149, 248);
+   }
+   .logout:hover{
+       background:#03d81f ;
+       color:white ;
+   
+   }
